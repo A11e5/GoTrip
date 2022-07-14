@@ -28,7 +28,124 @@ body {
     margin: 0 auto;
 }
 
+.container-right {
+    padding-left: calc( (100% - var(--container-width))/2 + var(--containter-padding));
+}
+
+.container-left {
+    padding-right: calc( (100% - var(--container-width))/2 + var(--containter-padding));
+}
+
 .block {
     height: 200px;
-    background-color: #ff0000;
+    background-color: cyan;
+}
+
+
+/* Header */
+
+.header {
+    position: relative;
+    min-height: 940px;
+    background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
+    padding-top: 44px;
+    color: #fff;
+}
+
+.header a {
+    color: inherit;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 96px;
+    background-image: url(./../img/header/header-bottom.svg);
+    background-size: 100%;
+}
+
+.header__top {
+    margin-bottom: 86px;
+}
+
+.header__content {
+    max-width: 592px;
+}
+
+
+/* Nav */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 80px;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 80px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.nav__list a {
+    position: relative;
+}
+
+.nav__list a.active::after,
+.nav__list a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 10px;
+    bottom: -6px;
+    height: 4px;
+    background: #C4C4C4;
+    border-radius: 100px;
+}
+
+.nav__login {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+
+/* Btn */
+
+.btn {
+    display: inline-block;
+    padding: 13px 44px;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.btn:hover {
+    color: #0F1F1C;
+    transition: color 0.2s ease-in;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
 }
