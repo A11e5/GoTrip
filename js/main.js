@@ -1,6 +1,8 @@
-$(document).ready(function(){
+// Owl Carousel
+
+$(document).ready(function() {
     $(".owl-carousel").owlCarousel();
-  });
+});
 
 var owl = $('.owl-carousel');
 
@@ -18,3 +20,12 @@ $('.slider__btn--prev').click(function() {
 $('.slider__btn--next').click(function() {
     owl.trigger('next.owl.carousel');
 })
+
+// Nav Icon
+
+const navBtn = document.querySelector('.nav__toggle');
+const menuIcon = document.querySelector('.menu-icon');
+
+navBtn.onclick = function() {
+    menuIcon.classList.toggle('menu-icon-active');
+}

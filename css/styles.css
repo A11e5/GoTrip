@@ -1,4 +1,5 @@
 @import url(./reset.css);
+@import url(./menu-icon.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 /* VARIABLES */
@@ -99,6 +100,7 @@ body {
     right: -35px;
     width: 830px;
     height: 622px;
+    pointer-events: none;
 }
 
 .header__img img {
@@ -151,6 +153,10 @@ body {
     font-size: 15px;
     font-weight: 500;
     line-height: 22px;
+}
+
+.nav__toggle {
+    display: none;
 }
 
 
@@ -462,7 +468,7 @@ body {
 
 /* BUTTONS  переделать в 1 класс .btn с модификаторами!*/
 
-.login__btn {
+.btn {
     display: inline-block;
     padding: 13px 44px;
     background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
@@ -472,63 +478,35 @@ body {
     line-height: 22px;
 }
 
-.login__btn:hover {
+.btn:hover {
     color: #0F1F1C;
     transition: color 0.2s ease-in;
 }
 
-.login__btn:active {
+.btn:active {
     position: relative;
     top: 1px;
 }
 
 .header__btn {
-    display: inline-block;
     padding: 27px 48px;
-    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
     border-radius: 27px;
     font-size: 25px;
     font-weight: 600;
     line-height: 38px;
-    color: #FEFEFE;
-}
-
-.header__btn:hover {
-    color: #0F1F1C;
-    transition: color 0.2s ease-in;
-}
-
-.header__btn:active {
-    position: relative;
-    top: 1px;
 }
 
 .destinations__btn,
 .cta__btn {
-    display: inline-block;
+    padding: 25px 45px;
+    border-radius: 27px;
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
-    color: #FEFEFE;
-    padding: 25px 45px;
-    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
-    border-radius: 27px;
 }
 
 .cta__btn {
     padding: 25px 54px;
-}
-
-.destinations__btn:hover,
-.cta__btn:hover {
-    color: #0F1F1C;
-    transition: color 0.2s ease-in;
-}
-
-.destinations__btn:active,
-.cta__btn:active {
-    position: relative;
-    top: 1px;
 }
 
 .slider__btn {
@@ -560,10 +538,8 @@ body {
     right: -27px;
 }
 
-.subscribe-form__btn {
-    display: inline-block;
+.subscribe-form--btn {
     padding: 34px 86px;
-    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
     color: #FFF;
     border-radius: 35px;
     font-weight: 600;
@@ -571,24 +547,14 @@ body {
     line-height: 38px;
 }
 
-.subscribe-form__btn:hover {
-    color: #0F1F1C;
-    transition: color 0.2s ease-in;
-}
-
-.subscribe-form__btn:active {
-    position: relative;
-    top: 1px;
-}
-
-.login__btn.login__btn--footer {
+.btn.btn--footer {
     color: #FFF;
 }
 
-.login__btn.login__btn--footer:hover {
+.btn.btn--footer:hover {
     color: #0F1F1C;
 }
 
-.login__btn.login__btn--footer:last-child {
+.btn.btn--footer:last-child {
     margin-left: 40px;
 }

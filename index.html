@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoTrip</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -17,7 +18,7 @@
     <header class="header">
         <div class="container">
             <div class="header__top">
-                <nav class="nav">
+                <nav class="nav nav--mobile">
                     <div class="nav__logo">
                         <h2 class="logo"><a href="#!">GoTrip</a></h2>
                     </div>
@@ -40,9 +41,15 @@
                             <a href="#!">Sign up</a>
                         </li>
                         <li>
-                            <a href="#!" class="login__btn">Login</a>
+                            <a href="#!" class="btn login--btn">Login</a>
                         </li>
                     </ul>
+
+                    <button type="button" class="nav__toggle">
+                        <div class="menu-icon-wrapper">
+                            <div class="menu-icon"></div>
+                        </div>
+                    </button>
                 </nav>
             </div>
             <div class="header__row">
@@ -56,7 +63,7 @@
                             explore the beauty of god's earth in a beautiful forest and have fun
                         </p>
                     </div>
-                    <a href="#!" class="header__btn">Explore Now</a>
+                    <a href="#!" class="btn header__btn">Explore Now</a>
                 </div>
                 <div class="header__img">
                     <img src="./img/header/header-img.png" alt="Image" />
@@ -78,7 +85,7 @@
                                 explore the beauty of god's earth in a beautiful forest and have fun
                             </p>
                         </div>
-                        <a href="#!" class="destinations__btn">Explore Now</a>
+                        <a href="#!" class="btn destinations__btn">Explore Now</a>
                     </div>
                     <div class="destinations__slider">
                         <div class="slider">
@@ -88,11 +95,11 @@
                                 <img class="slider__item" src="./img/slider/03.jpg" alt="img03" />
                             </div>
                             <button class="slider__btn slider__btn--prev">
-                  <img src="./img/slider/arrow-left.svg" alt="Prev" />
-                </button>
+                                <img src="./img/slider/arrow-left.svg" alt="Prev" />
+                            </button>
                             <button class="slider__btn slider__btn--next">
-                  <img src="./img/slider/arrow-right.svg" alt="Right" />
-                </button>
+                                <img src="./img/slider/arrow-right.svg" alt="Right" />
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -140,7 +147,7 @@
                     <div class="cta__text">
                         <p>There's the best discount for you today.</p>
                     </div>
-                    <a href="#!" class="cta__btn">Get Started</a>
+                    <a href="#!" class="btn cta__btn">Get Started</a>
                 </div>
             </div>
         </section>
@@ -151,7 +158,7 @@
                     <h2 class="subscribe__title">Subscribe<br>To Our Newsletter</h2>
                     <form class="subscribe-form">
                         <input type="email" class="subscribe-form__input" placeholder="Yourmail@mail.com" />
-                        <button class="subscribe-form__btn">Subscribe</button>
+                        <button class="btn subscribe-form--btn">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -183,7 +190,7 @@
                         <a href="#!">Sign up</a>
                     </li>
                     <li>
-                        <a href="#!" class="login__btn login__btn--footer">Login</a>
+                        <a href="#!" class="btn btn--footer">Login</a>
                     </li>
                 </ul>
             </nav>

@@ -1,0 +1,38 @@
+/* < 1269 */
+
+@media (max-width: 1269px) {
+    .container-right {
+        padding-left: 15px;
+    }
+}
+
+
+/* < 1000px */
+
+@media (max-width: 1000px) {
+    .nav__list {
+        display: none;
+    }
+    .nav__login {
+        display: none;
+    }
+    .nav__toggle {
+        display: block;
+    }
+    .nav--mobile {
+        position: fixed;
+        flex-direction: column;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background: linear-gradient(210deg, #428E5F -17.38%, #112120 78.4%), #204434;
+    }
+    .nav--mobile .nav__list {
+        display: block;
+    }
+    .nav--mobile .nav__login {
+        display: block;
+    }
+}
