@@ -159,6 +159,10 @@ body {
     display: none;
 }
 
+.no-scroll {
+    overflow-y: hidden;
+}
+
 
 /* LOGO */
 
@@ -272,6 +276,11 @@ body {
     margin-top: 0;
     width: 380px;
     height: 456px;
+}
+
+.owl-item {
+    display: flex;
+    justify-content: center;
 }
 
 

@@ -9,8 +9,17 @@ var owl = $('.owl-carousel');
 owl.owlCarousel({
     center: true,
     loop: true,
-    margin: 30,
-    items: 3,
+    margin: 20,
+    items: 1,
+    responsive: {
+        540: {
+            items: 3,
+        },
+        1200: {
+            items: 3,
+            margin: 30,
+        },
+    }
 });
 
 $('.slider__btn--prev').click(function() {
@@ -25,7 +34,10 @@ $('.slider__btn--next').click(function() {
 
 const navBtn = document.querySelector('.nav__toggle');
 const menuIcon = document.querySelector('.menu-icon');
+const nav = document.querySelector('.nav');
 
 navBtn.onclick = function() {
     menuIcon.classList.toggle('menu-icon-active');
+    nav.classList.toggle('nav--mobile');
+    document.body.classList.toggle('no-scroll');
 }
